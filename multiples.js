@@ -5,14 +5,11 @@
  */
 exports.sumOfAMultiple = function( n ) {
   var sum = 0;
-  let numArr = [];
+
   for (let i = 0; i < n; i++){
     if(i%3 === 0 || i%5 === 0){
-      numArr.push(i);
+      sum+=i;
     }
-  }
-  for(let j = 0; j < numArr.length; j++){
-    sum+=numArr[j];
   }
 
   return sum;
